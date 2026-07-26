@@ -406,7 +406,7 @@ if (!testStarted) {
                      지친 당신께, 위로의 한마디
                   </CardTitle>
                   <CardDescription className="text-base text-slate-500 mt-2">
-                    어떤 운동이 잘 어울릴까?
+                    잠시만, 쉬어가실까요?
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
