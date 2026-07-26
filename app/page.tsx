@@ -400,7 +400,7 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center pb-6">
                   <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-18 h-18 object-contain" />
+                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
@@ -475,7 +475,7 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-18 h-18 object-contain" />
+                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
                   <CardTitle className="text-3xl font-extrabold text-green-700 tracking-tight">
                     성향 분석 결과
