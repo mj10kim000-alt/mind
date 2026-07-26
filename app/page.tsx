@@ -405,7 +405,7 @@ if (!testStarted) {
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
                   </CardTitle>
-                  <CardDescription className="text-2xl font-extrabold text-amber-900 mt-2">
+                  <CardDescription className="text-base text-slate-500 mt-2">
                     잠시만, 쉬어가실까요?
                   </CardDescription>
                 </CardHeader>
@@ -435,7 +435,7 @@ if (!testStarted) {
                       disabled={!participantName.trim()}
                       className="bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
                     >
-                      Play
+                      편지 열어보기
                     </Button>
                   </div>
 
