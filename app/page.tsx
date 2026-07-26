@@ -402,8 +402,8 @@ if (!testStarted) {
                   <div className="mb-4 flex justify-center">
                     <img src="/Baseball (2).png" alt="배드민턴" className="w-16 h-16 object-contain" />
                   </div>
-                  <CardTitle className="text-2xl font-extrabold text-green-700 tracking-tight leading-snug">
-                    나에게 맞는 운동은?
+                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                     지친 당신께, 위로의 한마디
                   </CardTitle>
                   <CardDescription className="text-base text-slate-500 mt-2">
                     어떤 운동이 잘 어울릴까?
