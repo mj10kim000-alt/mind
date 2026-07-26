@@ -433,7 +433,7 @@ if (!testStarted) {
                     <Button
                       onClick={startTest}
                       disabled={!participantName.trim()}
-                      className="bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
+                      className="bg-gradient-to-r from-orange-300 to-yellow-600 hover:from-orange-400 hover:to-yellow-600 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
                     >
                       편지 열어보기
                     </Button>
