@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "나에게 맞는 운동은?",
+  title: "지친 당신께, 위로의 한마디",
   description: "어떤 운동이 잘 어울릴까?",
   generator: "v0.app",
 }

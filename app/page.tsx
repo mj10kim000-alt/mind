@@ -581,8 +581,8 @@ if (!testStarted) {
             <Card className="shadow-2xl border-0 bg-white rounded-3xl">
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
-                  <CardTitle className="text-2xl font-extrabold text-green-700">
-                    나에게 맞는 운동은?
+                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                    지친 당신께, 위로의 한마디
                   </CardTitle>
                   <Badge variant="outline" className="text-sm border-green-300 text-green-700">
                     {currentQuestion + 1} / {shuffledQuestions.length}
