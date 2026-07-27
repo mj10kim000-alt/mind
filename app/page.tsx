@@ -121,8 +121,8 @@ const personalityQuestions = {
 // 성향 유형별 설명과 이미지
 const personalityTypes = {
   I: {
-    name: "필라테스",
-    description: "정확한 자세와 균형을 중요하게 생각하는 당신에게 딱 맞는 운동입니다",
+    name: "",
+    description: "완벽하지 않아도 괜찮아요. 지금도 충분히 잘하고 있어요",
     image: "/fil.jpg",
   },
   A: {
@@ -477,7 +477,7 @@ if (!testStarted) {
                   <div className="mb-4 flex justify-center">
                     <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
-                  <CardTitle className="text-3xl font-extrabold text-green-700 tracking-tight">
+                  <CardTitle className="text-3xl font-extrabold text-amber-700 tracking-tight">
                     성향 분석 결과
                   </CardTitle>
                   <CardDescription className="text-lg text-slate-500 mt-2">
@@ -494,7 +494,7 @@ if (!testStarted) {
                         <img
                           src={personalityTypes[result.type as keyof typeof personalityTypes].image || "/placeholder.svg"}
                           alt={personalityTypes[result.type as keyof typeof personalityTypes].name}
-                          className="w-20 h-20 rounded-full object-cover border-2 border-green-200 shadow-lg"
+                          className="w-20 h-20 rounded-full object-cover border-2 border-amber-200 shadow-lg"
                         />
                       </div>
 
@@ -502,7 +502,7 @@ if (!testStarted) {
                         <div className="flex items-center space-x-3 mb-2">
                           <Badge
                             variant="secondary"
-                            className="text-lg px-3 py-1 bg-gradient-to-r from-green-500 to-orange-400 text-white"
+                            className="text-lg px-3 py-1 bg-gradient-to-r from-amber-700 to-orange-600 text-white"
                           >
                             {index + 1}위
                           </Badge>
