@@ -49,7 +49,7 @@ export default function AdminSignUpPage() {
 
           {state?.success && (
             <Alert>
-              <AlertDescription className="text-green-700">{state.success}</AlertDescription>
+              <AlertDescription className="text-amber-700">{state.success}</AlertDescription>
             </Alert>
           )}
 

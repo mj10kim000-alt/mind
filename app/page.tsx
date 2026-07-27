@@ -376,7 +376,7 @@ export default function PersonalityTest() {
 if (!testStarted) {
     return (
       <div
-        className="min-h-screen relative overflow-hidden bg-green-800"
+        className="min-h-screen relative overflow-hidden bg-amber-800"
         style={{
           backgroundImage: "url('/BackGround.png')",
           backgroundSize: "cover",
@@ -439,18 +439,18 @@ if (!testStarted) {
                     </Button>
                   </div>
 
-                  <div className="bg-green-50/80 rounded-lg p-4 space-y-2">
+                  <div className="bg-amber-50/80 rounded-lg p-4 space-y-2">
                     <div className="text-sm text-slate-600 space-y-1">
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
                         <span>각 질문에 대해 1-5점으로 평가</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
                         <span>소요시간: 약 10-15분</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
                         <span>질문 순서는 매번 랜덤하게 섞입니다</span>
                       </div>
                     </div>
@@ -584,7 +584,7 @@ if (!testStarted) {
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
                     지친 당신께, 위로의 한마디
                   </CardTitle>
-                  <Badge variant="outline" className="text-sm border-green-300 text-green-700">
+                  <Badge variant="outline" className="text-sm border-amber-300 text-amber-700">
                     {currentQuestion + 1} / {shuffledQuestions.length}
                   </Badge>
                 </div>
@@ -603,7 +603,7 @@ if (!testStarted) {
                     <Button
                       key={index}
                       variant="outline"
-                      className="w-full p-4 text-left justify-start hover:bg-green-50/80 hover:border-green-300 bg-white border-slate-200 rounded-xl"
+                      className="w-full p-4 text-left justify-start hover:bg-amber-50/80 hover:border-amber-300 bg-white border-slate-200 rounded-xl"
                       onClick={() => handleAnswer(index + 1)}
                     >
                       <span className="font-semibold text-orange-500 mr-3">{index + 1}</span>
@@ -617,7 +617,7 @@ if (!testStarted) {
                     <Button
                       variant="ghost"
                       onClick={() => setCurrentQuestion((prev) => prev - 1)}
-                      className="text-slate-500 hover:text-green-700 hover:bg-green-50/50"
+                      className="text-slate-500 hover:text-amber-700 hover:bg-amber-50/50"
                     >
                       이전 질문으로
                     </Button>

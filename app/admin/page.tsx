@@ -419,7 +419,7 @@ ALTER TABLE personality_test_results DISABLE ROW LEVEL SECURITY;`}
                             {scores.map((score, index) => (
                               <td key={index} className="border border-purple-500/20 px-4 py-2 text-center">
                                 <span
-                                  className={`font-medium ${score >= 30 ? "text-green-400" : score >= 20 ? "text-yellow-400" : "text-purple-300"}`}
+                                  className={`font-medium ${score >= 30 ? "text-amber-400" : score >= 20 ? "text-yellow-400" : "text-purple-300"}`}
                                 >
                                   {score}
                                 </span>
