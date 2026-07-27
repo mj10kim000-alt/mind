@@ -378,7 +378,7 @@ if (!testStarted) {
       <div
         className="min-h-screen relative overflow-hidden bg-green-800"
         style={{
-          backgroundImage: "url('/BackGroun.png')",
+          backgroundImage: "url('/BackGround.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
