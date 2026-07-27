@@ -121,54 +121,54 @@ const personalityQuestions = {
 // 성향 유형별 설명과 이미지
 const personalityTypes = {
   I: {
-    name: "필라테스",
-    description: "정확한 자세와 균형을 중요하게 생각하는 당신에게 딱 맞는 운동입니다",
-    image: "/fil.jpg",
+    name: "완벽주의에 지친 사람",
+    description: "완벽하지 않아도 괜찮아요. 지금도 충분히 잘하고 있어요",
+    image: "/mind1.png",
   },
   A: {
-    name: "배드민턴",
-    description: "함께 호흡하고 협력하는 과정에서 즐거움을 느낄 수 있습니다",
-    image: "/bad.jpg",
+    name: "사랑에 목마른 사람",
+    description: "너가 뭘 해줘서가 아니라, 그냥 너라서 좋아하는 거야",
+    image: "/mind.png",
   },
   B: {
-    name: "크로스핏",
-    description: "목표를 세우고 기록을 달성하며 성취감을 얻을 수 있습니다",
-    image: "/hel.jpg",
+    name: "성과에 쫓기는 사람",
+    description: "성과가 없어도 너의 가치는 변하지 않아",
+    image: "/mind3.png",
   },
   C: {
-    name: "폴댄스",
-    description: "나만의 개성과 감정을 자유롭게 표현할 수 있습니다",
-    image: "/pol.jpg",
+    name: "마음이 유독 예민한 사람",
+    description: "네 감정, 이해돼. 너무 유별난 게 아니야",
+    image: "/mind4.png",
   },
   D: {
-    name: "암벽등반",
-    description: "전략을 세우고 문제를 해결하는 재미를 느낄 수 있습니다",
-    image: "/clime.jpg",
+    name: "혼자 견디는 게 익숙한 사람",
+    description: "천천히 해도 돼. 네가 도움 필요하다고 말하는 거, 부담 아니야",
+    image: "/mind5.png",
   },
   E: {
-    name: "등반",
-    description: "꾸준히 도전하며 안정감과 만족감을 얻을 수 있습니다",
-    image: "/mount.jpg",
+    name: "불안이 많은 사람",
+    description: "내가 옆에 있어. 걱정 안 해도 돼, 같이 헤쳐나가자",
+    image: "/mind6.png",
   },
   F: {
-    name: "줌바",
-    description: "신나고 다양한 움직임으로 지루할 틈 없이 즐길 수 있습니다",
-    image: "/zumba.jpg",
+    name: "마음이 늘 바쁜 사람",
+    description: "힘든 감정 피하지 않아도 돼. 슬퍼해도 괜찮아",
+    image: "/mind7.png",
   },
   G: {
-    name: "복싱",
-    description: "강한 에너지를 마음껏 발휘하며 도전할 수 있습니다",
-    image: "/box.jpg",
+    name: "겉으로만 단단한 사람",
+    description: "약한 모습 보여도 괜찮아. 너 지켜줄게",
+    image: "/mind8.png",
   },
   H: {
-    name: "요가",
-    description: "몸과 마음의 균형을 찾으며 편안함을 느낄 수 있습니다",
-    image: "/yoga.jpg",
+    name: "자기 목소리를 아끼는 사람",
+    description: "네 생각도 중요해. 네가 여기 있는 것만으로도 의미 있어",
+    image: "/mind9.png",
   },
   J: {
     name: "특별 유형",
     description: "개인적 특성 분석",
-    image: "/zumba.jpg",
+    image: "/mind1.png",
   },
 }
 
@@ -378,7 +378,7 @@ if (!testStarted) {
       <div
         className="min-h-screen relative overflow-hidden bg-green-800"
         style={{
-          backgroundImage: "url('/Bg.png')",
+          backgroundImage: "url('/Back.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -400,13 +400,13 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center pb-6">
                   <div className="mb-4 flex justify-center">
-                    <img src="/Baseball (2).png" alt="배드민턴" className="w-16 h-16 object-contain" />
+                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
-                  <CardTitle className="text-2xl font-extrabold text-green-700 tracking-tight leading-snug">
-                    나에게 맞는 운동은?
+                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                     지친 당신께, 위로의 한마디
                   </CardTitle>
-                  <CardDescription className="text-base text-slate-500 mt-2">
-                    어떤 운동이 잘 어울릴까?
+                  <CardDescription className="text-base text-amber-700 mt-2">
+                    잠시만, 쉬어가실까요?
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -420,7 +420,7 @@ if (!testStarted) {
                       placeholder="이름을 입력해주세요"
                       value={participantName}
                       onChange={(e) => setParticipantName(e.target.value)}
-                      className="w-full border-green-200 focus:border-green-400 focus:ring-green-400/20 rounded-xl"
+                      className="w-full border-amber-200 focus:border-amber-700 focus:ring-amber-400/20 rounded-xl"
                       onKeyPress={(e) => {
                         if (e.key === "Enter" && participantName.trim()) {
                           startTest()
@@ -433,9 +433,9 @@ if (!testStarted) {
                     <Button
                       onClick={startTest}
                       disabled={!participantName.trim()}
-                      className="bg-gradient-to-r from-orange-400 to-yellow-400 hover:from-orange-500 hover:to-yellow-500 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
+                      className="bg-gradient-to-r from-orange-300 to-yellow-600 hover:from-orange-400 hover:to-yellow-600 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
                     >
-                      Play
+                      편지 열어보기
                     </Button>
                   </div>
 
@@ -475,9 +475,9 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/Baseball (2).png" alt="배드민턴" className="w-16 h-16 object-contain" />
+                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
-                  <CardTitle className="text-3xl font-extrabold text-green-700 tracking-tight">
+                  <CardTitle className="text-3xl font-extrabold text-amber-700 tracking-tight">
                     성향 분석 결과
                   </CardTitle>
                   <CardDescription className="text-lg text-slate-500 mt-2">
@@ -488,13 +488,13 @@ if (!testStarted) {
                   {topThree.map((result, index) => (
                     <div
                       key={result.type}
-                      className="flex items-center space-x-6 p-6 bg-green-50/80 rounded-lg border border-green-200/50"
+                      className="flex items-center space-x-6 p-6 bg-amber-50/80 rounded-lg border border-amber-200/50"
                     >
                       <div className="flex-shrink-0">
                         <img
                           src={personalityTypes[result.type as keyof typeof personalityTypes].image || "/placeholder.svg"}
                           alt={personalityTypes[result.type as keyof typeof personalityTypes].name}
-                          className="w-20 h-20 rounded-full object-cover border-2 border-green-200 shadow-lg"
+                          className="w-20 h-20 rounded-full object-cover border-2 border-amber-200 shadow-lg"
                         />
                       </div>
 
@@ -502,7 +502,7 @@ if (!testStarted) {
                         <div className="flex items-center space-x-3 mb-2">
                           <Badge
                             variant="secondary"
-                            className="text-lg px-3 py-1 bg-gradient-to-r from-green-500 to-orange-400 text-white"
+                            className="text-lg px-3 py-1 bg-gradient-to-r from-amber-700 to-orange-600 text-white"
                           >
                             {index + 1}위
                           </Badge>
@@ -536,7 +536,7 @@ if (!testStarted) {
                       <Button
                         onClick={() => window.open("/admin", "_blank")}
                         variant="outline"
-                        className="ml-4 px-6 py-2 border-green-300 text-green-700 hover:bg-green-50 rounded-full"
+                        className="ml-4 px-6 py-2 border-amber-300 text-amber-700 hover:bg-amber-50 rounded-full"
                       >
                         관리자 페이지
                       </Button>
@@ -581,8 +581,8 @@ if (!testStarted) {
             <Card className="shadow-2xl border-0 bg-white rounded-3xl">
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
-                  <CardTitle className="text-2xl font-extrabold text-green-700">
-                    나에게 맞는 운동은?
+                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                    지친 당신께, 위로의 한마디
                   </CardTitle>
                   <Badge variant="outline" className="text-sm border-green-300 text-green-700">
                     {currentQuestion + 1} / {shuffledQuestions.length}
