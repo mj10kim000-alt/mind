@@ -420,7 +420,7 @@ if (!testStarted) {
                       placeholder="이름을 입력해주세요"
                       value={participantName}
                       onChange={(e) => setParticipantName(e.target.value)}
-                      className="w-full border-green-200 focus:border-green-400 focus:ring-green-400/20 rounded-xl"
+                      className="w-full border-amber-200 focus:border-amber-700 focus:ring-amber-400/20 rounded-xl"
                       onKeyPress={(e) => {
                         if (e.key === "Enter" && participantName.trim()) {
                           startTest()
