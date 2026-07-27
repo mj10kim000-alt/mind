@@ -488,7 +488,7 @@ if (!testStarted) {
                   {topThree.map((result, index) => (
                     <div
                       key={result.type}
-                      className="flex items-center space-x-6 p-6 bg-green-50/80 rounded-lg border border-green-200/50"
+                      className="flex items-center space-x-6 p-6 bg-amber-50/80 rounded-lg border border-green-200/50"
                     >
                       <div className="flex-shrink-0">
                         <img
