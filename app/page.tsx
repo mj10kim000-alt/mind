@@ -536,7 +536,7 @@ if (!testStarted) {
                       <Button
                         onClick={() => window.open("/admin", "_blank")}
                         variant="outline"
-                        className="ml-4 px-6 py-2 border-green-300 text-green-700 hover:bg-green-50 rounded-full"
+                        className="ml-4 px-6 py-2 border-amber-300 text-amber-700 hover:bg-amber-50 rounded-full"
                       >
                         관리자 페이지
                       </Button>
