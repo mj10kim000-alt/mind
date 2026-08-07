@@ -416,9 +416,9 @@ if (!testStarted) {
 <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
                   </CardTitle>
-                  className="magic-subtitle text-base mt-2"
-                    잠시만, 쉬어가실까요?
-                  </CardDescription>
+                    <CardDescription className="magic-subtitle text-base mt-2">
+                     잠시만, 쉬어가실까요?
+                    </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-3">
