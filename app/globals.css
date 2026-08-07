@@ -183,7 +183,7 @@
   position: absolute;
   inset: -3px;
   border-radius: 1.6rem;
-  background: linear-gradient(135deg, #d97706, #f59e0b, #92400e);
+  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
   z-index: -1;
   filter: blur(6px);
   opacity: 0.9;

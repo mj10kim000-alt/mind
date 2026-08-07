@@ -399,13 +399,24 @@ if (!testStarted) {
             <div className="badminton-glow-card">
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center pb-6">
-                  <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
-                  </div>
-                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                  <div className="mb-4 flex justify-center items-center gap-4">
+  <svg width="56" height="56" viewBox="0 0 58 58" fill="none">
+    <circle cx="29" cy="29" r="27" stroke="#5c1420" strokeWidth="1.5" fill="#e8d29c" />
+    <circle cx="29" cy="29" r="21" stroke="#cda13a" strokeWidth="1" />
+    <path d="M18 24 L29 34 L40 24" stroke="#5c1420" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M18 24 L18 34 L40 34 L40 24" stroke="#5c1420" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M22 20 Q29 14 36 20" stroke="#cda13a" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+  </svg>
+  <svg width="56" height="56" viewBox="0 0 58 58" fill="none">
+    <circle cx="29" cy="29" r="27" fill="#caa437" stroke="#8f6a20" strokeWidth="1.5" />
+    <circle cx="29" cy="29" r="21" fill="none" stroke="#6b4e17" strokeWidth="1" />
+    <text x="29" y="37" textAnchor="middle" fontSize="20" fontWeight="700" fill="#4a2e12" fontFamily="Georgia, serif">H</text>
+  </svg>
+</div>
+<CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
                   </CardTitle>
-                  <CardDescription className="text-base text-amber-700 mt-2">
+                  className="magic-subtitle text-base mt-2"
                     잠시만, 쉬어가실까요?
                   </CardDescription>
                 </CardHeader>
@@ -475,8 +486,14 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 bg-white rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
-                  </div>
+  <svg width="64" height="64" viewBox="0 0 58 58" fill="none">
+    <circle cx="29" cy="29" r="27" stroke="#5c1420" strokeWidth="1.5" fill="#e8d29c" />
+    <circle cx="29" cy="29" r="21" stroke="#cda13a" strokeWidth="1" />
+    <path d="M18 24 L29 34 L40 24" stroke="#5c1420" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M18 24 L18 34 L40 34 L40 24" stroke="#5c1420" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M22 20 Q29 14 36 20" stroke="#cda13a" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+  </svg>
+</div>
                   <CardTitle className="text-3xl font-extrabold text-amber-700 tracking-tight">
                     성향 분석 결과
                   </CardTitle>
