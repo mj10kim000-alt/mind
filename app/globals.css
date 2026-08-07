@@ -141,7 +141,7 @@
  /* 모든 화면에서 재사용하는 최종 배경: 사진 + 다크 오버레이 + 고정 */
 .badminton-bg {
   background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%),
-    url("/BackGround.png");
+    url("/harr.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,6 +155,30 @@
   border-radius: 1.5rem;
 }
 .badminton-glow-card::before {
+  /* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
+.parchment-card {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.35), transparent 40%),
+    radial-gradient(circle at 85% 90%, rgba(120, 80, 20, 0.15), transparent 45%),
+    linear-gradient(160deg, #f3e3ba, #e8d29c 60%, #f3e3ba);
+  border: 1px solid #cda13a !important;
+  box-shadow:
+    0 0 0 1px #d8bd7e,
+    0 0 28px 4px rgba(240, 207, 116, 0.55),
+    0 0 60px 10px rgba(205, 161, 58, 0.25);
+}
+
+.magic-title {
+  font-family: var(--font-magic-serif), serif;
+  color: #5c1420;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.magic-subtitle {
+  font-family: var(--font-magic-serif), serif;
+  color: #6b4b23;
+  font-style: italic;
+}
   content: "";
   position: absolute;
   inset: -3px;
