@@ -155,7 +155,17 @@
   border-radius: 1.5rem;
 }
 .badminton-glow-card::before {
-  /* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.9;
+}
+
+/* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
 .parchment-card {
   background:
     radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.35), transparent 40%),
@@ -178,13 +188,4 @@
   font-family: var(--font-magic-serif), serif;
   color: #6b4b23;
   font-style: italic;
-}
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 1.6rem;
-  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
-  z-index: -1;
-  filter: blur(6px);
-  opacity: 0.9;
 }
