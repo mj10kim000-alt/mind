@@ -46,7 +46,7 @@ export default function AdminLoginPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md">
+      Card className="w-full max-w-md"><
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold">관리자 로그인</CardTitle>
           <p className="text-gray-600">성향 분석 관리자 페이지 접근</p>

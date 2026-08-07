@@ -397,7 +397,13 @@ if (!testStarted) {
         <div className="relative z-10 p-4 flex items-center justify-center min-h-screen">
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
-              <Card className="shadow-2xl border-0 bg-white rounded-3xl">
+              <div
+    className="relative w-[560px] h-[760px] mx-auto bg-contain bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/paper.png')",
+    }}
+  >
+    <div className="absolute inset-0 px-16 py-20">
                 <CardHeader className="text-center pb-6">
                   <div className="mb-4 flex justify-center">
                     <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
@@ -461,8 +467,9 @@ if (!testStarted) {
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
+}
 
   if (showResults) {
     const topThree = getTopThreeTypes()
