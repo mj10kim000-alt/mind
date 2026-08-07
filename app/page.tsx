@@ -462,7 +462,7 @@ if (!testStarted) {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </div>
             </div>
           </div>
         </div>
