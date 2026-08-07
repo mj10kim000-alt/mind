@@ -400,7 +400,7 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
                 <CardHeader className="text-center pb-6">
                   <div className="mb-4 flex justify-center">
-                    <img src="/icon.png" alt="편지" className="w-20 h-20 object-contain" />
+                    <img src="/logogo.jpg" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
 <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
