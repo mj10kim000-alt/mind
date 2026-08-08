@@ -378,7 +378,7 @@ if (!testStarted) {
       <div
         className="min-h-screen relative overflow-hidden bg-amber-800"
         style={{
-          backgroundImage: "url('/BackGround.png')",
+          backgroundImage: "url('/harr.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
