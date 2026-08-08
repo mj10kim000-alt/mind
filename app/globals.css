@@ -141,7 +141,7 @@
  /* 모든 화면에서 재사용하는 최종 배경: 사진 + 다크 오버레이 + 고정 */
 .badminton-bg {
   background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%),
-    url("/BackGround.png");
+    url("/harr.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,11 +155,55 @@
   border-radius: 1.5rem;
 }
 .badminton-glow-card::before {
+  /* 카드 주변 그린-오렌지 네온 글로우 테두리 (이미 넣으셨으면 중복 추가 금지) */
+.badminton-glow-card {
+  position: relative;
+  border-radius: 1.5rem;
+}
+.badminton-glow-card::before {
   content: "";
   position: absolute;
   inset: -3px;
   border-radius: 1.6rem;
-  background: linear-gradient(135deg, #d97706, #f59e0b, #92400e);
+  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.9;
+}
+
+/* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
+.parchment-card {
+  background-color: #e8d29c;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.4), transparent 45%),
+    radial-gradient(circle at 80% 85%, rgba(110, 75, 20, 0.25), transparent 50%),
+    radial-gradient(circle at 60% 40%, rgba(150, 110, 40, 0.15), transparent 55%),
+    linear-gradient(160deg, #f3e3ba, #e8d29c 55%, #ecd9ac 100%);
+  background-blend-mode: overlay, normal, multiply, multiply, normal;
+  border: 1px solid #cda13a !important;
+  box-shadow:
+    0 0 0 1px #d8bd7e,
+    0 0 28px 4px rgba(240, 207, 116, 0.55),
+    0 0 60px 10px rgba(205, 161, 58, 0.25);
+}
+
+.magic-title {
+  font-family: var(--font-magic-serif), serif;
+  color: #5c1420;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.magic-subtitle {
+  font-family: var(--font-magic-serif), serif;
+  color: #6b4b23;
+  font-style: italic;
+}
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
   z-index: -1;
   filter: blur(6px);
   opacity: 0.9;
