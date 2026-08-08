@@ -397,7 +397,7 @@ if (!testStarted) {
         <div className="relative z-10 p-4 flex items-center justify-center min-h-screen">
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
-              <Card className="shadow-2xl border-0 bg-white rounded-3xl">
+              <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
                 <CardHeader className="text-center pb-6">
                   <div className="mb-4 flex justify-center">
                     <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
@@ -405,8 +405,8 @@ if (!testStarted) {
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
                      지친 당신께, 위로의 한마디
                   </CardTitle>
-                    className="magic-subtitle text-base mt-2"
-                     잠시만, 쉬어가실까요?
+                    <CardDescription className="magic-subtitle text-base mt-2">
+                      잠시만, 쉬어가실까요?
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -472,7 +472,7 @@ if (!testStarted) {
         <div className="relative z-10 p-4">
           <div className="max-w-2xl mx-auto">
             <div className="badminton-glow-card">
-              <Card className="shadow-2xl border-0 bg-white rounded-3xl">
+              <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
                     <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
@@ -556,7 +556,7 @@ if (!testStarted) {
       <div className="min-h-screen relative overflow-hidden badminton-bg">
         <div className="relative z-10 p-4 flex items-center justify-center min-h-screen">
           <div className="badminton-glow-card">
-            <Card className="shadow-2xl border-0 bg-white rounded-3xl">
+            <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
               <CardContent className="p-8 text-center">
                 <div className="space-y-4">
                   <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto"></div>
@@ -578,7 +578,7 @@ if (!testStarted) {
       <div className="relative z-10 p-4">
         <div className="max-w-2xl mx-auto">
           <div className="badminton-glow-card">
-            <Card className="shadow-2xl border-0 bg-white rounded-3xl">
+            <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
