@@ -397,14 +397,18 @@ if (!testStarted) {
         <div className="relative z-10 p-4 flex items-center justify-center min-h-screen">
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
-              <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
+            <Card className="shadow-2xl border-0 parchment-card rounded-3xl relative overflow-visible">
+              <div className="wax-seal-badge">
+                <span>H</span>
+              </div>
+                <div className="postmark">
+                 <span>MAGIC<br/>POST</span>
+               </div>
                 <CardHeader className="text-center pb-6">
-                  <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
-                  </div>
-                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
-                     지친 당신께, 위로의 한마디
-                  </CardTitle>
+                <p className="letter-kicker">✦ 부엉이 편지가 도착했습니다 ✦</p>
+                <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
+                  지친 당신께, 위로의 한마디
+                 </CardTitle>
                     <CardDescription className="magic-subtitle text-base mt-2">
                       잠시만, 쉬어가실까요?
                   </CardDescription>
