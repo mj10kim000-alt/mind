@@ -174,7 +174,6 @@
 /* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
 .parchment-card {
   background-image:
-    linear-gradient(rgba(243, 227, 186, 0.25), rgba(232, 210, 156, 0.35)),
     url("/parchment_texture.jpg");
   background-size: cover;
   background-position: center;
