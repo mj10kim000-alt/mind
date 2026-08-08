@@ -398,9 +398,6 @@ if (!testStarted) {
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
             <Card className="shadow-2xl border-0 parchment-card rounded-3xl relative overflow-visible">
-                <div className="postmark">
-                 <span>MAGIC<br/>POST</span>
-               </div>
                 <CardHeader className="text-center pb-6">
                 <p className="letter-kicker">✦ 부엉이 편지가 도착했습니다 ✦</p>
                 <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
