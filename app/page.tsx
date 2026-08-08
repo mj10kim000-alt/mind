@@ -398,9 +398,6 @@ if (!testStarted) {
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
             <Card className="shadow-2xl border-0 parchment-card rounded-3xl relative overflow-visible">
-              <div className="wax-seal-badge">
-                <span>H</span>
-              </div>
                 <div className="postmark">
                  <span>MAGIC<br/>POST</span>
                </div>
