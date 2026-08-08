@@ -150,8 +150,6 @@
 }
 
 .badminton-glow-card {
-/* 카드 주변 그린-오렌지 네온 글로우 테두리 (이미 넣으셨으면 중복 추가 금지) */
-.badminton-glow-card {
   position: relative;
   border-radius: 1.5rem;
 }
@@ -189,13 +187,4 @@
   font-family: var(--font-magic-serif), serif;
   color: #6b4b23;
   font-style: italic;
-}
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 1.6rem;
-  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
-  z-index: -1;
-  filter: blur(6px);
-  opacity: 0.9;
 }
