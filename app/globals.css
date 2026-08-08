@@ -141,7 +141,7 @@
  /* 모든 화면에서 재사용하는 최종 배경: 사진 + 다크 오버레이 + 고정 */
 .badminton-bg {
   background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%),
-    url("/BackGround.png");
+    url("/harr.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,8 +159,92 @@
   position: absolute;
   inset: -3px;
   border-radius: 1.6rem;
-  background: linear-gradient(135deg, #d97706, #f59e0b, #92400e);
+  background: linear-gradient(135deg, #f0cf74, #cda13a, #8f6a20);
   z-index: -1;
   filter: blur(6px);
   opacity: 0.9;
+}
+
+/* 해리포터풍 양피지 카드 - bg-white 대신 이 클래스를 사용 */
+.parchment-card {
+  background-image:
+    linear-gradient(rgba(243, 227, 186, 0.25), rgba(232, 210, 156, 0.35)),
+    url("/parchment_texture.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #cda13a !important;
+  box-shadow:
+    0 0 0 1px #d8bd7e,
+    0 0 28px 4px rgba(240, 207, 116, 0.55),
+    0 0 60px 10px rgba(205, 161, 58, 0.25);
+}
+
+.magic-title {
+  font-family: var(--font-magic-serif), serif;
+  color: #5c1420;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.magic-subtitle {
+  font-family: var(--font-magic-serif), serif;
+  color: #6b4b23;
+  font-style: italic;
+}
+.wax-seal-badge {
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #8b1e2b, #5c1420 70%);
+  border: 3px solid #3c0c14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45), inset 0 2px 4px rgba(255, 255, 255, 0.15);
+  z-index: 5;
+}
+
+.wax-seal-badge span {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #e8d29c;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.letter-kicker {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #8f6a20;
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 4px;
+}
+
+.postmark {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 64px;
+  height: 64px;
+  border: 2px dashed rgba(92, 20, 32, 0.45);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-12deg);
+  opacity: 0.6;
+}
+
+.postmark span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #5c1420;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
 }
