@@ -473,7 +473,7 @@ export default function PersonalityTest() {
               <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
+                    <img src="/icon.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
                   <CardTitle className="text-3xl font-extrabold text-amber-700 tracking-tight">
                     성향 분석 결과
