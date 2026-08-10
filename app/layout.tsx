@@ -19,8 +19,8 @@ const gowunBatang = Gowun_Batang({
   weight: ["400", "700"],
 })
 export const metadata: Metadata = {
-  title: "지친 당신께, 위로의 한마디",
-  description: "잠시만, 쉬어가실까요?",
+  title: "나와 닮은 호그와트 캐릭터 찾기",
+  description: "나와 꼭 닮은 호그와트의 마법사를 찾아보세요.",
   generator: "v0.app",
 }
 

@@ -401,10 +401,10 @@ export default function PersonalityTest() {
                 <CardHeader className="text-center pb-6">
                   <p className="letter-kicker">✦ 부엉이 편지가 도착했습니다 ✦</p>
                   <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
-                    지친 당신께, 위로의 한마디
+                    나와 닮은 호그와트 캐릭터 찾기
                   </CardTitle>
                   <CardDescription className="magic-subtitle text-base mt-2">
-                    잠시만, 쉬어가실까요?
+                    나와 꼭 닮은 호그와트의 마법사를 찾아보세요
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -433,7 +433,7 @@ export default function PersonalityTest() {
                       disabled={!participantName.trim()}
                       className="bg-gradient-to-r from-orange-300 to-yellow-600 hover:from-orange-400 hover:to-yellow-600 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
                     >
-                      편지 열어보기
+                      봉인된 편지 열기
                     </Button>
                   </div>
 
@@ -580,7 +580,7 @@ export default function PersonalityTest() {
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
                   <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
-                    지친 당신께, 위로의 한마디
+                    나와 닮은 호그와트 캐릭터 찾기
                   </CardTitle>
                   <Badge variant="outline" className="text-sm border-amber-300 text-amber-700">
                     {currentQuestion + 1} / {shuffledQuestions.length}
