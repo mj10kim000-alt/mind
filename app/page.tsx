@@ -121,54 +121,54 @@ const personalityQuestions = {
 // 성향 유형별 설명과 이미지
 const personalityTypes = {
   I: {
-    name: "완벽주의에 지친 사람",
-    description: "완벽하지 않아도 괜찮아요. 지금도 충분히 잘하고 있어요",
-    image: "/mind1.png",
+    name: "Hermione",
+    description: "너에게는 우리가 필요해",
+    image: "/he.png",
   },
   A: {
-    name: "사랑에 목마른 사람",
-    description: "너가 뭘 해줘서가 아니라, 그냥 너라서 좋아하는 거야",
-    image: "/mind.png",
+    name: "Rubeus Hagrid",
+    description: "걱정만 하고 앉아 있어 봤자 소용없어. 올 일은 오고, 그때 맞서면 되는 거야",
+    image: "/heg.png",
   },
   B: {
-    name: "성과에 쫓기는 사람",
-    description: "성과가 없어도 너의 가치는 변하지 않아",
-    image: "/mind3.png",
+    name: "Draco Malfoy",
+    description: "우리 아버지가 이 사실을 알게 될 거야!",
+    image: "/mal.png",
   },
   C: {
-    name: "마음이 유독 예민한 사람",
-    description: "네 감정, 이해돼. 너무 유별난 게 아니야",
-    image: "/mind4.png",
+    name: "Severus Snape",
+    description: "감정을 다스려라, 정신을 단련해라",
+    image: "/sne.png",
   },
   D: {
-    name: "혼자 견디는 게 익숙한 사람",
-    description: "천천히 해도 돼. 네가 도움 필요하다고 말하는 거, 부담 아니야",
-    image: "/mind5.png",
+    name: "Remus Lupin",
+    description: "너는 약한 게 아니란다, 해리. 부끄러워할 것도 없어",
+    image: "/ramus.png",
   },
   E: {
-    name: "불안이 많은 사람",
-    description: "내가 옆에 있어. 걱정 안 해도 돼, 같이 헤쳐나가자",
-    image: "/mind6.png",
+    name: "Ron Weasley",
+    description: "머글들 때문에 기죽지 마",
+    image: "/ron.png",
   },
   F: {
-    name: "마음이 늘 바쁜 사람",
-    description: "힘든 감정 피하지 않아도 돼. 슬퍼해도 괜찮아",
-    image: "/mind7.png",
+    name: "Fred Weasley",
+    description: "피브스, 우리 몫까지 실컷 난장판을 만들어 줘",
+    image: "/asd.png",
   },
   G: {
-    name: "겉으로만 단단한 사람",
-    description: "약한 모습 보여도 괜찮아. 너 지켜줄게",
-    image: "/mind8.png",
+    name: "Harry Potter",
+    description: "난 누구에게도 휘둘리지 않을 거야",
+    image: "/harry.png",
   },
   H: {
-    name: "자기 목소리를 아끼는 사람",
-    description: "네 생각도 중요해. 네가 여기 있는 것만으로도 의미 있어",
-    image: "/mind9.png",
+    name: "Albus Dumbledore",
+    description: "잘 준비된 마음에게 죽음은 그저 다음 위대한 모험일 뿐이란다.",
+    image: "/Albus Dumbledore.png",
   },
   J: {
     name: "특별 유형",
     description: "개인적 특성 분석",
-    image: "/mind1.png",
+    image: "/harry.png",
   },
 }
 
@@ -373,7 +373,7 @@ export default function PersonalityTest() {
     setShuffledQuestions([])
   }
 
-if (!testStarted) {
+  if (!testStarted) {
     return (
       <div
         className="min-h-screen relative overflow-hidden bg-amber-800"
@@ -397,14 +397,14 @@ if (!testStarted) {
         <div className="relative z-10 p-4 flex items-center justify-center min-h-screen">
           <div className="max-w-md mx-auto w-full">
             <div className="badminton-glow-card">
-            <Card className="shadow-2xl border-0 parchment-card rounded-3xl relative overflow-visible">
+              <Card className="shadow-2xl border-0 parchment-card rounded-3xl relative overflow-visible">
                 <CardHeader className="text-center pb-6">
-                <p className="letter-kicker">✦ 부엉이 편지가 도착했습니다 ✦</p>
-                <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
-                  지친 당신께, 위로의 한마디
-                 </CardTitle>
-                    <CardDescription className="magic-subtitle text-base mt-2">
-                      잠시만, 쉬어가실까요?
+                  <p className="letter-kicker">✦ 부엉이 편지가 도착했습니다 ✦</p>
+                  <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
+                    나와 닮은 호그와트 캐릭터 찾기
+                  </CardTitle>
+                  <CardDescription className="magic-subtitle text-base mt-2">
+                    나와 꼭 닮은 호그와트의 마법사를 찾아보세요
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -433,7 +433,7 @@ if (!testStarted) {
                       disabled={!participantName.trim()}
                       className="bg-gradient-to-r from-orange-300 to-yellow-600 hover:from-orange-400 hover:to-yellow-600 text-white px-10 py-3 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 rounded-full"
                     >
-                      편지 열어보기
+                      봉인된 편지 열기
                     </Button>
                   </div>
 
@@ -473,7 +473,7 @@ if (!testStarted) {
               <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/latter.png" alt="편지" className="w-20 h-20 object-contain" />
+                    <img src="/icon.png" alt="편지" className="w-20 h-20 object-contain" />
                   </div>
                   <CardTitle className="text-3xl font-extrabold text-amber-700 tracking-tight">
                     성향 분석 결과
@@ -579,8 +579,8 @@ if (!testStarted) {
             <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
-                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
-                    지친 당신께, 위로의 한마디
+                  <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
+                    나와 닮은 호그와트 캐릭터 찾기
                   </CardTitle>
                   <Badge variant="outline" className="text-sm border-amber-300 text-amber-700">
                     {currentQuestion + 1} / {shuffledQuestions.length}
