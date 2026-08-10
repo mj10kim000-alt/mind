@@ -579,7 +579,7 @@ export default function PersonalityTest() {
             <Card className="shadow-2xl border-0 parchment-card rounded-3xl">
               <CardHeader>
                 <div className="flex justify-between items-center mb-4">
-                  <CardTitle className="text-2xl font-extrabold text-amber-900 tracking-tight leading-snug">
+                  <CardTitle className="magic-title text-2xl font-extrabold tracking-tight leading-snug">
                     나와 닮은 호그와트 캐릭터 찾기
                   </CardTitle>
                   <Badge variant="outline" className="text-sm border-amber-300 text-amber-700">
